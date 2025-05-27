@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal del Alumno</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0056b3;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 2rem;
+    }
+
+    .sidebar {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .content {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #007bff;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    h2 {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portal del Alumno</h1>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Mis Cursos</a>
+    <a href="#">Calificaciones</a>
+    <a href="#">Perfil</a>
+    <a href="#">Cerrar Sesión</a>
+  </nav>
+
+  <main>
+    <aside class="sidebar">
+      <h2>Mi Perfil</h2>
+      <p><strong>Nombre:</strong> Juan Pérez</p>
+      <p><strong>Correo:</strong> juan.perez@email.com</p>
+      <p><strong>Matrícula:</strong> 202501234</p>
+    </aside>
+
+    <section class="content">
+      <h2>Bienvenido, Juan</h2>
+      <p>En este portal podrás consultar tus cursos, revisar tus calificaciones y actualizar tu perfil.</p>
+
+      <h3>Próximas clases:</h3>
+      <ul>
+        <li>Matemáticas Avanzadas - Lunes 8:00 AM</li>
+        <li>Programación Web - Martes 10:00 AM</li>
+        <li>Historia Universal - Miércoles 9:00 AM</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Portal del Alumno - Todos los derechos reservados.
+  </footer>
+</body>
+</html>
